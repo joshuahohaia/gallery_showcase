@@ -4,7 +4,7 @@
 
 - [x] Deploy
 - [x] Scaffold UI with Mock
-- [ ] DB Setup (postgres vercel)
+- [x] DB Setup (postgres vercel)
 - [ ] Communication between frontend and DB
 - [ ] Add Auth
 - [ ] Add image upload
