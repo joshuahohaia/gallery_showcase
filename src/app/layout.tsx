@@ -8,6 +8,15 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+function NavigationBar() {
+  return (
+    <nav className="flex w-full items-center justify-between border-b border-gray-700 bg-gray-900 p-4 text-xl font-semibold">
+      <h1 className="text-2xl font-bold ">Gallery</h1>
+      <div>Sign</div>
+    </nav>
+  );
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -15,7 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+      <body className={`flex flex-col gap-4 font-sans`}>
+        <NavigationBar />
+        {children}
+      </body>
     </html>
   );
 }

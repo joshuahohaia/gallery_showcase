@@ -2,8 +2,8 @@
 
 ## TODO
 
-- [ ] Deploy
-- [ ] Scaffold UI with Mock
+- [x] Deploy
+- [x] Scaffold UI with Mock
 - [ ] DB Setup (postgres vercel)
 - [ ] Communication between frontend and DB
 - [ ] Add Auth
