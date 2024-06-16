@@ -6,7 +6,7 @@
 - [x] Scaffold UI with Mock
 - [x] DB Setup (postgres vercel)
 - [x] Communication between frontend and DB
-- [ ] Add Auth
+- [x] Add Auth
 - [ ] Add image upload
 - [ ] Error management (Sentry)
 - [ ] Routing with parallel routes
