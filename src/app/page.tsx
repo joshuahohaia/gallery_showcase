@@ -15,20 +15,15 @@ const mockImages = mockUrls.map((url, index) => ({
 }));
 
 export default async function HomePage() {
-  const posts = await db.query.posts.findMany();
+  const images = await db.query.images.findMany({
+    orderBy: (image, { desc }) => desc(image.createdAt),
+  });
 
-  console.log(posts);
+  console.log(images);
   return (
     <main className="">
       <div className="flex flex-wrap justify-center gap-4 ">
-        {posts.map((post) => (
-          <div key={post.id} className="relative h-40 w-52">
-            <li>{post.id}</li>
-            <li>{post.name}</li>
-            <li>{post.createdAt?.toString()}</li>
-          </div>
-        ))}
-        {[...mockImages, ...mockImages, ...mockImages].map((image, index) => (
+        {[...images, ...images, ...images].map((image, index) => (
           //remove index key once no mock data
           <div key={`${image.id} - ${index}`} className="relative h-40 w-52">
             <img

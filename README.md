@@ -5,7 +5,7 @@
 - [x] Deploy
 - [x] Scaffold UI with Mock
 - [x] DB Setup (postgres vercel)
-- [ ] Communication between frontend and DB
+- [x] Communication between frontend and DB
 - [ ] Add Auth
 - [ ] Add image upload
 - [ ] Error management (Sentry)
