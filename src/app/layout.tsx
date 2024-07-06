@@ -1,7 +1,12 @@
 import "~/styles/globals.css";
+import "@uploadthing/react/styles.css";
+
 import { GeistSans } from "geist/font/sans";
 import { ClerkProvider } from "@clerk/nextjs";
 import { NavigationBar } from "./_components/navigation";
+import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
+import { extractRouterConfig } from "uploadthing/server";
+import { ourFileRouter } from "./api/uploadthing/core";
 
 export const metadata = {
   title: "Gallery Showcase",
@@ -17,6 +22,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
+        <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
         <body className={`flex flex-col gap-4 font-sans`}>
           <NavigationBar />
           {children}

@@ -21,6 +21,7 @@ export const createTable = pgTableCreator((name) => `gallery_showcase_${name}`);
 export const images = createTable(
   "image",
   {
+    userId: varchar("user_id", { length: 256 }).notNull(),
     id: serial("id").primaryKey(),
     name: varchar("name", { length: 256 }).notNull(),
     url: varchar("url", { length: 1024 }).notNull(),

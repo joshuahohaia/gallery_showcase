@@ -7,7 +7,7 @@
 - [x] DB Setup (postgres vercel)
 - [x] Communication between frontend and DB
 - [x] Add Auth
-- [ ] Add image upload
+- [x] Add image upload
 - [ ] Use Next/Image component
 - [ ] Error management (Sentry)
 - [ ] Routing with parallel routes

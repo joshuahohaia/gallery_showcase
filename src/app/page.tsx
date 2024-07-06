@@ -9,9 +9,9 @@ async function Images() {
   });
   return (
     <div className="flex flex-wrap justify-center gap-4 ">
-      {[...images, ...images, ...images].map((image, index) => (
+      {[...images].map((image, index) => (
         //remove index key once no mock data
-        <div key={`${image.id} - ${index}`} className="relative h-40 w-52">
+        <div key={image.id} className="relative h-40 w-52">
           <img
             className="absolute h-full w-full object-cover"
             src={image.url}
