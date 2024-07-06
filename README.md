@@ -8,6 +8,7 @@
 - [x] Communication between frontend and DB
 - [x] Add Auth
 - [ ] Add image upload
+- [ ] Use Next/Image component
 - [ ] Error management (Sentry)
 - [ ] Routing with parallel routes
 - [ ] Delete button
